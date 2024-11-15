@@ -1,28 +1,28 @@
 Here's a basic `README.md` template for your AI mock interview application. Feel free to adjust the details as needed:
 
 ```markdown
-# AI Mock Interview App
+ AI Mock Interview App
 
 Welcome to the AI Mock Interview App! This application is designed to help users prepare for interviews by generating mock interview questions and providing feedback. It allows users to simulate real-world interview scenarios and receive personalized insights based on their responses.
 
-## Features
+ Features
 
-- **Mock Interviews**: Generate mock interview questions based on job roles, descriptions, and experience levels.
-- **Feedback**: Receive detailed feedback on your answers to help improve your interview skills.
-- **Dashboard**: Easily manage your mock interviews and view past sessions.
-- **User Authentication**: Secure sign-in and sign-up options to keep your data safe.
-- **Responsive Design**: Works seamlessly across devices with a modern, user-friendly interface.
+- Mock Interviews**: Generate mock interview questions based on job roles, descriptions, and experience levels.
+- Feedback: Receive detailed feedback on your answers to help improve your interview skills.
+- Dashboard: Easily manage your mock interviews and view past sessions.
+- User Authentication: Secure sign-in and sign-up options to keep your data safe.
+- Responsive Design: Works seamlessly across devices with a modern, user-friendly interface.
 
-## Getting Started
+ Getting Started
 
-### Prerequisites
+ Prerequisites
 
 - Node.js (v14 or higher)
 - Bun (optional, for package management)
 
-### Installation
+ Installation
 
-1. **Clone the Repository**
+1. Clone the Repository**
 
    ```bash
    git clone https://github.com/Dalimi-02/Ai_Interview.git
