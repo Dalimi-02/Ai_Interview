@@ -27,12 +27,26 @@ const InterviewList = () => {
     );
     setInterviewList(result)
   };
+
+  const handleDelete = async (id) => {
+    // Call the delete function from your database or API
+    await db
+      .delete(MockInterview)
+      .where(eq(MockInterview.id, id));
+    
+    // Refresh the interview list after deletion
+    GetInterviewList();
+  };
+
   return (
     <div>
       <h2 className="font-medium text-xl">Previous Mock Interview</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-3">
         {InterviewList&&InterviewList.map((interview,index)=>(
-            <InterviewItemCard interview={interview} key={index}/>
+            <div key={interview.id}>
+                <InterviewItemCard interview={interview} />
+                <button onClick={() => handleDelete(interview.id)} className="bg-red-400 text-white py-1 px-2 rounded mt-2">Delete</button>
+            </div>
         ))}
       </div>
     </div>

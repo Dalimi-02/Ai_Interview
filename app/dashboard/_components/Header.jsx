@@ -30,10 +30,26 @@ export const Header = () => {
 
         <li
           className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
-            path === "/dashboard/how" && "text-primary font-bold"
+            path === "/dashboard/how" ? "text-primary font-bold" : ""
           }`}
         >
           <Link href="/dashboard/how">How it works?</Link>
+        </li>
+
+        <li
+          className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+            path === "/dashboard/system-design" ? "text-primary font-bold" : ""
+          }`}
+        >
+          <Link href="/dashboard/system-design">System Design Prep</Link>
+        </li>
+
+        <li
+          className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+            path === "/dashboard/coding" ? "text-primary font-bold" : ""
+          }`}
+        >
+          <Link href="/dashboard/coding">Coding Prep</Link>
         </li>
       </ul>
       <UserButton />
