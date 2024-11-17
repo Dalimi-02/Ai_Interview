@@ -159,27 +159,27 @@ function CodingInterviewPrep() {
                     {isRecording ? 'Stop Recording' : 'Start Recording'}
                 </button>
             </div>
+            <div style={{ textAlign: 'left', marginTop: '20px', display: 'flex' }}>
+                <div style={{ flex: 1, marginRight: '20px' }}>
+                    <h3>Output</h3>
+                    <pre style={{ backgroundColor: '#f9f9f9', padding: '10px', borderRadius: '5px' }}>{output}</pre>
+                </div>
+                <video 
+                    ref={videoRef} 
+                    style={{ 
+                        marginTop: '0', // Align video to the top
+                        width: '30%', 
+                        borderRadius: '5px', 
+                    }} 
+                    src={videoUrl} 
+                    controls 
+                />
+            </div>
             <div style={{ textAlign: 'left', marginTop: '20px' }}>
                 {hints.map((hint, index) => (
                     <p key={index} style={{ color: '#555' }}>{hint}</p>
                 ))}
             </div>
-            <div style={{ marginTop: '20px', textAlign: 'left' }}>
-                <h3>Output</h3>
-                <pre style={{ backgroundColor: '#f9f9f9', padding: '10px', borderRadius: '5px' }}>{output}</pre>
-            </div>
-            <video 
-                ref={videoRef} 
-                style={{ 
-                    marginTop: '20px', 
-                    width: '100%', 
-                    borderRadius: '5px', 
-                    float: 'left' // Align video to the left
-                }} 
-                src={videoUrl} 
-                controls 
-            />
-            <div style={{ clear: 'both' }}></div> {/* Clear float to prevent layout issues */}
         </div>
     );
 }
