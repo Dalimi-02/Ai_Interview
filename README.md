@@ -1,4 +1,4 @@
-Here's a basic `README.md` template for your AI mock interview application. Feel free to adjust the details as needed:
+
 
 ```markdown
  AI Mock Interview App
